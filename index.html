@@ -1523,16 +1523,7 @@
           });
         });
       }
-
-      var form = document.getElementById("contact-form");
-      var success = document.getElementById("form-success");
-      if (form) {
-        form.addEventListener("submit", function () {
-          if (success) success.classList.add("show");
-        });
-      }
-
-      var sections = ["home", "about", "programs", "research", "partnerships", "impact", "donate", "contact"];
+     var sections = ["home", "about", "programs", "research", "partnerships", "impact", "donate", "contact"];
       var navAs = links ? links.querySelectorAll("a[href^='#']") : [];
       function setActive() {
         var y = window.scrollY + 120;
