@@ -1408,53 +1408,70 @@
   This form uses FormSubmit to forward your inquiry to SAMA.
   Please do not include medical records or sensitive personal information.
 </p>
-     <form class="form" id="contact-form" action="https://formsubmit.co/info@samaorg.ca" method="POST">
-          <div class="form-row">
-            <div class="field">
-              <label for="name">Full name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
-            </div>
-            <div class="field">
-              <label for="org">Organization</label>
-              <input id="org" name="organization" type="text" autocomplete="organization" placeholder="Institution or organization" />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@organization.org" />
-            </div>
-            <div class="field">
-              <label for="interest">Area of interest</label>
-              <select id="interest" name="interest">
-                <option value="Partnership">Partnership</option>
-                <option value="Research collaboration">Research collaboration</option>
-                <option value="Humanitarian programs">Humanitarian programs</option>
-                <option value="Philanthropy / grant">Philanthropy / grant</option>
-                <option value="General inquiry">General inquiry</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="How would you like to work with SAMA?"></textarea>
-          </div>
-      <input type="hidden" name="_subject" value="New Inquiry from SAMA Website">
+   
+<form class="form" id="contact-form"
+      action="https://formspree.io/f/xpppeple"
+      method="POST">
 
-<input type="hidden" name="_captcha" value="false">
+  <div class="form-row">
+    <div class="field">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text"
+             autocomplete="name" required
+             placeholder="Your name" />
+    </div>
 
-<input type="hidden" name="_template" value="table">
+    <div class="field">
+      <label for="org">Organization</label>
+      <input id="org" name="organization" type="text"
+             autocomplete="organization"
+             placeholder="Institution or organization" />
+    </div>
+  </div>
 
-<input type="hidden" name="_next" value="https://samaorg.ca/">
-          <button class="btn btn-primary" type="submit" data-od-id="contact-submit">Send inquiry</button>
-         <p class="form-note">
-  After submitting, wait for the submission service's response.
-  If you see an error, delivery is not confirmed.
-  You can also email
-  <a href="mailto:info@samaorg.ca">info@samaorg.ca</a>
-  directly.
-</p></div>
-        </form>
+  <div class="form-row">
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email"
+             autocomplete="email" required
+             placeholder="you@organization.org" />
+    </div>
+
+    <div class="field">
+      <label for="interest">Area of interest</label>
+      <select id="interest" name="interest">
+        <option value="Partnership">Partnership</option>
+        <option value="Research collaboration">Research collaboration</option>
+        <option value="Humanitarian programs">Humanitarian programs</option>
+        <option value="Philanthropy / grant">Philanthropy / grant</option>
+        <option value="General inquiry">General inquiry</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required
+      placeholder="How would you like to work with SAMA?"></textarea>
+  </div>
+
+  <input type="hidden" name="subject"
+         value="New Inquiry from SAMA Website">
+
+  <button class="btn btn-primary" type="submit"
+          data-od-id="contact-submit">
+    Send inquiry
+  </button>
+
+  <p class="form-note">
+    Thank you for contacting SAMA.
+    You can also email
+    <a href="mailto:info@samaorg.ca">info@samaorg.ca</a>
+    directly.
+  </p>
+
+</form>
+
       </div>
     </div>
   </section>
